@@ -1,0 +1,195 @@
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif!important;
+        overflow: hidden;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    a {
+        color: #28323C!important;
+        text-decoration: none!important;
+    }
+    /* HEADER */
+    
+    header {
+        background-color: #28323C;
+        padding: 0 2%!important;
+        height: 8%;
+        min-height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+    }
+    
+    .logo,
+    .logo svg {
+        height: 2.1rem;
+        width: auto;
+    }
+    
+    .logo svg {
+        padding: 1.2%;
+    }
+    
+    .exit img {
+        height: 1.8rem;
+    }
+    
+    .exit {
+        width: fit-content;
+        width: fit-content;
+    }
+    /* main */
+    
+    main {
+        height: 100%;
+        width: 100%;
+        flex-grow: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow-x: hidden;
+        background-image: url(!img/bg.jpg);
+        background-attachment: fixed;
+    }
+    
+    h1 {
+        font-weight: bold!important;
+        width: 100%;
+        color: #FFF;
+        margin-top: 0.5%!important;
+    }
+    
+    .container-lg {
+        height: 100%;
+    }
+    
+    .card img {
+        border-bottom: 1px solid #e3e3e3!important;
+        border-radius: 1rem 1rem 0 0!important;
+    }
+    
+    main .container-lg,
+    main .container-lg .row,
+    main .container-lg .row .col,
+    main .container-lg .row .col a {
+        background: inherit;
+    }
+    
+    .card.h-100:hover {
+        box-shadow: 0 0 2rem 0.2rem #28323C;
+        z-index: 2;
+        transform: scale(1.02);
+        background: #28323C!important;
+        border: none;
+    }
+    
+    .card {
+        border-radius: 1rem!important;
+        box-shadow: 0 0 1rem 0 #28323C;
+        background: inherit!important;
+        overflow: hidden;
+        z-index: 1;
+        color: #FFF;
+        border: none;
+    }
+    
+    .card:before {
+        content: "";
+        position: absolute;
+        background: inherit!important;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+        filter: blur(4px);
+        z-index: -1;
+        margin: -20px;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .card {
+            background-color: #28323C!important;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .last {
+            margin-bottom: 2%;
+        }
+    }
+    
+    @media only screen and (max-height: 768px) {
+        .card {
+            margin-bottom: 2%;
+        }
+    }
+    /* TERMS */
+    
+    .terms {
+        display: flex;
+        align-items: center;
+    }
+    
+    .terms .btn {
+        background-color: #00BE82!important;
+        color: #28323C;
+    }
+    
+    @media only screen and (min-width: 768px) and (min-height: 768px) {
+        .terms .btn {
+            font-size: 1.3rem;
+        }
+        .terms .card-title {
+            font-size: 3rem;
+        }
+        .terms .card-text {
+            font-size: 1.5rem;
+        }
+    }
+    
+    @media only screen and (max-height: 768px) {
+        .terms .card.text-center {
+            margin: auto;
+        }
+    }
+    /* FOOTER */
+    
+    footer {
+        background-color: #28323C;
+        height: 2%;
+        min-height: 13px;
+        flex-grow: 1;
+        padding: 0 2%!important;
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        color: white;
+    }
+    
+    @media only screen and (max-width: 768px) {
+        footer {
+            padding: 2%!important;
+        }
+    }
+    
+    @media only screen and (max-height: 768px) {
+        footer {
+            padding: 1% 2%!important;
+        }
+    }
+    
+    footer p {
+        margin: 0!important;
+        align-self: center;
+        font-size: 0.8rem;
+    }
